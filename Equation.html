@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type= "text/javascript">
+        var a = prompt("premier coefficient");
+        var b = prompt("second coefficient");
+        var c = prompt("troisieme coefficient");
+        
+        d = (b**2)-(4*a*c);
+        if (d==0) {
+            var s= b/2*a;
+            alert("le discriminant d est "+d);
+            alert ("La solution de l'equation est "+s);
+        }
+        else if (d>0){
+            var s1=(-b-Math.sqrt(d))/2*a;
+            var s2=(-b+Math.sqrt(d))/2*a;
+            alert("le discriminant d est "+d);
+            alert("les solutions de l'equation sont s1= "+s1+"et s2= "+s2)
+      
+        } else {alert("l'equation n'a pas de solution")}
+        </script>
+    </body>
+</html>
